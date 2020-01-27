@@ -79,7 +79,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: homeward_bound_rebuild_backend_production
-  username: homeward_bound_rebuild_backend
-  password: <%= ENV['HOMEWARD_BOUND_REBUILD_BACKEND_DATABASE_PASSWORD'] %>
+  <<: postgres://sqarpjdotlvfnc:e2fa3ebdd1ff4c0086e8bb5897aa8949fb497615f8bf0846123ef0426cfac950@ec2-54-174-221-35.compute-1.amazonaws.com:5432/dvi1la87ki6ne
+  database: dvi1la87ki6ne
+  username: sqarpjdotlvfnc
+  password: e2fa3ebdd1ff4c0086e8bb5897aa8949fb497615f8bf0846123ef0426cfac950
